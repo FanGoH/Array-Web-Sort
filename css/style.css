@@ -1,0 +1,11 @@
+div.display {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+/* div.bar {
+    background-color: aqua;
+    width: 20px;
+} */
