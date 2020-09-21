@@ -5,13 +5,42 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/range.css" rel="stylesheet">
     </head>
     <body>
-        <input type="file" class="fileButton">
 
-        <div class="display"></div>
+        <div class="header">
+            <h1> Web Array Sorter </h1>
+            <label for="file" class="hide"> Select a File Or Generate Random Array Below </label>
+            <input id="file" type="file" class="fileButton">
+        </div>
 
-        <script src="js/sorts.js"></script>
+        <div class="master-controls">
+            <button class="reset"> Reset Sort </button>
+            <div>
+                <label for="speed"> Sorting Speed </label>
+                <input id="speed" class="speed" type="range" min="20" max="1000"></input>
+            </div>
+            <div>
+                <input id="numberElements" class="numberElements" type="text" placeholder="Number of Elements"></input>
+                <button class="fillArray"> Fill Array </button>
+            </div>
+        </div>
+
+        <div class="display none"></div>
+
+        <div class="controls none"> 
+            <button class="bubbleSort"> Bubble Sort </button>
+            <button class="selectionSort"> Selection Sort </button>
+            <button class="insertionSort"> Insertion Sort </button>
+            <button class="mergeSort"> Merge Sort </button>
+            <button class="quickSort"> Quick Sort </button>
+        </div>
+
+
         <script src="js/interface.js"></script>
+        <script src="js/sorts.js"></script>
+        <script src="js/mergeSort.js"></script>
+        <script src="js/quickSort.js"></script>
     </body>
 </html>

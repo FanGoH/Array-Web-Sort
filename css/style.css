@@ -1,11 +1,54 @@
 div.display {
     margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     align-items: flex-end;
 
 }
 
-/* div.bar {
+.controls {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.controls button {
+    margin: 5px;
+}
+
+div.bar {
     background-color: aqua;
-    width: 20px;
-} */
+    /* border:0.01rem solid black; */
+    flex-grow: 1;
+} 
+
+div.bar.active {
+    background-color: red;
+}
+
+div.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+div.master-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.master-controls div {
+    display: flex;
+    align-items: center;
+}
+
+div.master-controls div label {
+    margin: 5px;
+}
